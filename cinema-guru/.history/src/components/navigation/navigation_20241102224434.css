@@ -1,0 +1,93 @@
+.navigation-header {
+  background-color: var(--secondary-dark);
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.navigation-header span {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-header span img {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  margin-right: 10px;
+  border: 3px solid var(--primary-dark);
+}
+
+.navigation-header span > span {
+  margin-left: 20px;
+  font-weight: bolder;
+  color: var(--primary-dark);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.navigation-header span > span:hover {
+  color: var(--primary-light);
+}
+
+.navigation-header span > span > p {
+  margin-left: 5px;
+}
+
+.side-bar {
+  width: 250px;
+  height: 100%;
+  background-color: var(--primary-dark);
+}
+
+.side-bar ul.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.side-bar ul.navigation li {
+  padding: 1rem 1.2rem;
+  font-weight: bolder;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.side-bar ul.navigation li:hover {
+  background-color: var(--primary);
+}
+
+.side-bar ul.navigation li.active {
+  background-color: var(--primary);
+}
+
+.side-bar ul.navigation li .active-icon {
+  margin-left: auto;
+}
+
+.side-bar ul.activities {
+  margin: 0 0.3rem;
+  padding: 0.5rem 0.7rem;
+  background-color: var(--secondary-light);
+}
+
+.side-bar ul.activities h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--main);
+}
+
+.side-bar.small {
+  width: 50px;
+}
+
+.side-bar.small ul li {
+  padding: 1rem;
+}

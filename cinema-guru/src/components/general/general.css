@@ -1,0 +1,28 @@
+.icon {
+  margin-right: 0.5rem;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1.2rem 0;
+}
+
+.text-input label .icon {
+  margin-right: 0.5rem;
+  color: var(--primary);
+  opacity: 0.2;
+}
+
+.text-input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #BB000E;
+  transition: 0.6s;
+}
+
+.text-input input:hover,
+.text-input input:focus {
+  border-bottom-color: #BB000E;
+}

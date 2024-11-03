@@ -1,0 +1,52 @@
+.authentication {
+	padding: 0;
+	margin: 0;
+	background-color: #222222;
+	min-width: 450px;
+	height: 100%;
+}
+
+.authentication header ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.authentication header ul li {
+	background-color: #BB000E;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 3rem;
+	cursor: pointer;
+	transition: 0.6s;
+	font-family: "Roboto", sans-serif;
+}
+
+.authentication header ul li.active {
+	font-weight: bolder;
+	background-color: #E31C25;
+}
+
+.authentication main {
+	color: #1C1C1C;
+	display: flex;
+	flex-direction: column;
+	padding: 1.3rem 3rem;
+	box-sizing: border-box;
+	justify-content: space-evenly;
+	height: 90%;
+}
+
+.authentication .authentication-header {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	margin: 1.5rem 0;
+}
+
+.authentication .submit-button {
+	margin-top: 1rem;
+	margin-left: auto;
+}

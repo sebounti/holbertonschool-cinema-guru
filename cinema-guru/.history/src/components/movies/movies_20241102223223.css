@@ -1,0 +1,164 @@
+.movie-card {
+  width: 300px;
+  min-height: 350px;
+  background-color: var(--secondary-light);
+  margin-bottom: 50px;
+  box-shadow: 12px 10px 13px -1px rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 12px 10px 13px -1px rgba(255, 255, 255, 0.05);
+  -moz-box-shadow: 12px 10px 13px -1px rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 30px;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+}
+
+.movie-card div.movie-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card div.movie-image .movie-actions {
+  align-self: end;
+  padding: 0.5rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),
+      rgba(0, 0, 0, 0.562)
+  );
+}
+
+.movie-card div.movie-image .movie-actions .icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: transparent;
+}
+
+.movie-card div.movie-image .movie-actions .icon:last-of-type {
+  margin-right: 0;
+}
+
+.movie-card div.movie-image .movie-actions .icon path {
+  stroke: var(--main);
+  stroke-width: 25;
+  transition: 0.5s;
+}
+
+.movie-card div.movie-image .movie-actions .icon:hover {
+  color: var(--main);
+  stroke: none;
+}
+
+.movie-card div.movie-image .movie-actions .icon.favorite,
+.movie-card div.movie-image .movie-actions .icon.watch-later {
+  color: var(--main);
+  stroke: none;
+}
+
+.movie-card div.movie-image .movie-actions .icon.favorite path,
+.movie-card div.movie-image .movie-actions .icon.watch-later path {
+  transition: 0.5s;
+}
+
+.movie-card div.movie-image .movie-actions .icon.favorite:hover,
+.movie-card div.movie-image .movie-actions .icon.watch-later:hover {
+  stroke: var(--main);
+  stroke-width: 25;
+  color: transparent;
+}
+
+.movie-card h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 0.5rem;
+  backdrop-filter: blur(6px);
+  box-sizing: border-box;
+}
+
+.movie-card div:last-of-type {
+  padding: 0.5rem;
+}
+
+.movie-card div:last-of-type p {
+  font-size: 0.8rem;
+  height: 40px;
+}
+
+.movie-card div:last-of-type ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.genre-tag {
+  background-color: var(--primary);
+  margin-bottom: 10px;
+  padding: 0.2rem 0.7rem;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.movies-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.movies-filter .filter-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.movies-filter .filter-section li:first-of-type {
+  width: 100%;
+}
+
+.movies-filter ul li {
+  margin-right: 40px;
+}
+
+.movies-filter ul li:last-of-type {
+  margin-right: 0;
+}
+
+.movies-filter .filter-section-2 {
+  display: flex;
+  height: fit-content;
+  align-self: center;
+  max-width: 30%;
+  flex-wrap: wrap;
+}
+
+.movies-filter .filter-section-2 li {
+  margin-right: 10px;
+}
+
+.movies-filter .filter-section-2 li {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.movies-filter .filter-section-2 li.active-tag {
+  background-color: var(--primary);
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
